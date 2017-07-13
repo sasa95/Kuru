@@ -1,0 +1,9 @@
+.header--main {
+	background-image: url('../img/header/header-main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 550px;
+	@media(min-width: 375px){
+		min-height: 665px;
+	}
+}
