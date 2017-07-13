@@ -34,26 +34,22 @@
 	background-repeat: no-repeat;
 	background-size: 16px;
 	background-position:left center;
-	color: #e4e4e4;
+	color: $color-nav-links;
 	transition: all .4s;
 	&.home-link {
-		background-image: url('../img/nav-icons/home.png');
+		background-image: url('../img/header/nav-icons/home.png');
 		background-position: left 45%;
 	}
 	&.video-link {
-		background-image: url('../img/nav-icons/video.png');
+		background-image: url('../img/header/nav-icons/video.png');
 	}
 	&.shop-link {
-		background-image: url('../img/nav-icons/cart.png');
+		background-image: url('../img/header/nav-icons/cart.png');
 	}
-	&.active {
-		// font-weight: bold;
-		color: #fff;
-	}
+	&.active,
 	&:focus,
 	&:hover {
 		color: #fff;
-		// text-decoration: underline;
 	}
 }
 
@@ -61,4 +57,10 @@
 	@media(min-width: $screen-lg) {
 		padding-left: 15px;
 	}
+}
+
+.header__arrows {
+	width: 16px;
+	@include abs-centered(horizontal);
+	bottom: 4%;
 }

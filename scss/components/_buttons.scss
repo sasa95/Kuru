@@ -60,3 +60,24 @@
 		}
 	}
 }
+
+////////////// --- END OF NAV BTN --- //////////////
+
+.button--elegant {
+	font-size: 1.2em;
+	color: #fff;
+	border-radius: 3px;
+	background-color: darken($color-elegant-gray,10);
+	padding: 4px 20px;
+	text-decoration: none!important;
+	outline: none!important;
+	transition: background-color .4s;
+	&:focus {
+		color: darken(#fff,4);
+	}
+	&:hover,
+	&:active {
+		background-color: $color-elegant-gray;
+		color: darken(#fff,4);
+	}
+}

@@ -10,9 +10,25 @@ html, body { margin: 0; padding: 0; height: 100%; }
 
 #footer { background: #787878; width: 100%; height: 100px; position: absolute; bottom: 0; left: 0; }
 
-.header--main { background-image: url("../img/header/header-main.jpg"); background-repeat: no-repeat; background-size: cover; min-height: 550px; }
+html, body { font-family: 'PT Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+.header--main { background-image: url("../img/header/header-main.jpg"); background-repeat: no-repeat; background-size: cover; min-height: 550px; position: relative; }
 
 @media (min-width: 375px) { .header--main { min-height: 665px; } }
+
+.header--main .button--elegant { position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 10%; }
+
+.header__quote { color: #fff; border-left: 10px solid #a5a0a4; padding-left: 30px; line-height: 1.6; font-size: 1.3em; font-weight: bold; font-style: italic; font-family: 'Droid Serif', serif; width: 80%; max-width: 1200px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+@media (min-width: 400px) { .header__quote { font-size: 1.6em; } }
+
+@media (min-width: 500px) { .header__quote { font-size: 2.1em; } }
+
+@media (min-width: 768px) { .header__quote { font-size: 2.5em; } }
+
+@media (min-width: 992px) { .header__quote { font-size: 3em; } }
 
 #nav--main { min-height: 60px; text-align: center; background-color: rgba(255, 255, 255, 0.2); padding: 8px 0 0; }
 
@@ -28,17 +44,17 @@ html, body { margin: 0; padding: 0; height: 100%; }
 
 .navbar-light .navbar-nav .nav-link { padding-left: 30px; background-repeat: no-repeat; background-size: 16px; background-position: left center; color: #e4e4e4; -webkit-transition: all .4s; -o-transition: all .4s; transition: all .4s; }
 
-.navbar-light .navbar-nav .nav-link.home-link { background-image: url("../img/nav-icons/home.png"); background-position: left 45%; }
+.navbar-light .navbar-nav .nav-link.home-link { background-image: url("../img/header/nav-icons/home.png"); background-position: left 45%; }
 
-.navbar-light .navbar-nav .nav-link.video-link { background-image: url("../img/nav-icons/video.png"); }
+.navbar-light .navbar-nav .nav-link.video-link { background-image: url("../img/header/nav-icons/video.png"); }
 
-.navbar-light .navbar-nav .nav-link.shop-link { background-image: url("../img/nav-icons/cart.png"); }
+.navbar-light .navbar-nav .nav-link.shop-link { background-image: url("../img/header/nav-icons/cart.png"); }
 
-.navbar-light .navbar-nav .nav-link.active { color: #fff; }
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { color: #fff; }
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { color: #fff; }
 
 @media (min-width: 992px) { .nav-item:not(:first-child) { padding-left: 15px; } }
+
+.header__arrows { width: 16px; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 4%; }
 
 .navbar-toggler { height: 40px; cursor: pointer; margin-right: 15px; outline: none !important; }
 
@@ -63,3 +79,9 @@ html, body { margin: 0; padding: 0; height: 100%; }
 #nav--main .navbar-toggler.collapsed .hamburger-menu:nth-child(2) { opacity: 1; }
 
 #nav--main .navbar-toggler.collapsed .hamburger-menu:nth-child(3) { -webkit-transform: translateX(0) rotate(0); -ms-transform: translateX(0) rotate(0); transform: translateX(0) rotate(0); }
+
+.button--elegant { font-size: 1.2em; color: #fff; border-radius: 3px; background-color: #8c868b; padding: 4px 20px; text-decoration: none !important; outline: none !important; -webkit-transition: background-color .4s; -o-transition: background-color .4s; transition: background-color .4s; }
+
+.button--elegant:focus { color: whitesmoke; }
+
+.button--elegant:hover, .button--elegant:active { background-color: #a5a0a4; color: whitesmoke; }

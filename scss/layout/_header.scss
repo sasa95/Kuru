@@ -3,7 +3,38 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 550px;
+	position: relative;
 	@media(min-width: 375px){
 		min-height: 665px;
+	}
+	.button--elegant {
+		@include abs-centered(horizontal);
+		bottom: 10%;
+	}
+}
+
+.header__quote {
+	color: #fff;
+	border-left: 10px solid $color-elegant-gray;
+	padding-left: 30px;
+	line-height: 1.6;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-style: italic;
+	font-family: 'Droid Serif', serif;
+	width: 80%;
+	max-width: 1200px;
+	@include abs-centered(both);
+	@media(min-width: 400px) {
+		font-size: 1.6em;
+	}
+	@media(min-width: 500px) {
+		font-size: 2.1em;
+	}
+	@media(min-width: $screen-md) {
+		font-size: 2.5em;
+	}
+		@media(min-width: $screen-lg) {
+			font-size: 3em;
 	}
 }
