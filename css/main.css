@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 .signiture { font-style: italic; font-family: 'Droid Serif', serif; font-size: 1.2em; margin-top: 30px; }
 
+.what-i-do { background-color: #2C3E50; }
+
+@media (max-width: 767px) { .what-i-do__item { margin-bottom: 50px; } }
+
 #nav--main { min-height: 60px; text-align: center; background-color: rgba(255, 255, 255, 0.2); padding: 8px 0 0; }
 
 @media (min-width: 992px) { #nav--main { padding: 0 0 3px 0; } }

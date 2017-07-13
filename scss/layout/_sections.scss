@@ -6,3 +6,14 @@
 	font-size: 1.2em;
 	margin-top: 30px;
 }
+
+// What I do
+
+.what-i-do {
+	background-color: $color-dark-blue;
+	@media(max-width: $screen-md - 1){
+		&__item {
+			margin-bottom: 50px;
+		}
+	}
+}
