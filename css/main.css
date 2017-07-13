@@ -1,6 +1,6 @@
 @media (max-width: 575px) { .container { margin: 0; } }
 
-html, body { margin: 0; padding: 0; height: 100%; }
+html, body { margin: 0; padding: 0; height: 100%; background-color: #ebebeb; }
 
 #wrapper { min-height: 100%; position: relative; }
 
@@ -29,6 +29,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 @media (min-width: 768px) { .header__quote { font-size: 2.5em; } }
 
 @media (min-width: 992px) { .header__quote { font-size: 3em; } }
+
+.signiture { font-style: italic; font-family: 'Droid Serif', serif; font-size: 1.2em; margin-top: 30px; }
 
 #nav--main { min-height: 60px; text-align: center; background-color: rgba(255, 255, 255, 0.2); padding: 8px 0 0; }
 
