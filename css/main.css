@@ -36,6 +36,26 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 @media (max-width: 767px) { .what-i-do__item { margin-bottom: 50px; } }
 
+.my-values { background: url("../img/my-values.jpg") no-repeat; background-size: cover; background-position: center bottom; }
+
+.my-values ol { padding: 0; font-size: 1.8em; margin: auto; display: inline-block; list-style-type: none; line-height: 1.7; position: relative; }
+
+@media (min-width: 576px) { .my-values ol:after, .my-values ol:before { content: ""; width: 100px; height: 2px; background-color: #a5a0a4; display: block; position: absolute; top: 50%; }
+  .my-values ol:after { left: 250px; }
+  .my-values ol:before { right: 250px; } }
+
+@media (min-width: 768px) { .my-values ol:after, .my-values ol:before { width: 130px; }
+  .my-values ol:after { left: 280px; }
+  .my-values ol:before { right: 280px; } }
+
+@media (min-width: 992px) { .my-values ol:after, .my-values ol:before { width: 150px; }
+  .my-values ol:after { left: 320px; }
+  .my-values ol:before { right: 320px; } }
+
+.my-values ol li { position: relative; counter-increment: customlistcounter; }
+
+.my-values ol li:before { content: "#" counter(customlistcounter); margin-right: 10px; }
+
 #nav--main { min-height: 60px; text-align: center; background-color: rgba(255, 255, 255, 0.2); padding: 8px 0 0; }
 
 @media (min-width: 992px) { #nav--main { padding: 0 0 3px 0; } }

@@ -17,3 +17,71 @@
 		}
 	}
 }
+
+// My Values
+
+.my-values {
+	background: url('../img/my-values.jpg') no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	ol {
+		padding: 0;
+		font-size: 1.8em;
+		margin: auto;
+		display: inline-block;
+		list-style-type: none;
+		line-height: 1.7;
+		position: relative;
+		@media(min-width: $screen-sm){
+			&:after,
+			&:before {
+				content: "";
+				width: 100px;
+				height: 2px;
+				background-color: $color-elegant-gray;
+				display: block;
+				position: absolute;
+				top: 50%;
+			}
+			&:after {
+				left: 250px;
+			}
+			&:before {
+				right: 250px;
+			}
+		}
+		@media(min-width: $screen-md){
+			&:after,
+			&:before {
+				width: 130px;
+			}
+			&:after {
+				left: 280px;
+			}
+			&:before {
+				right: 280px;
+			}
+		}
+		@media(min-width: $screen-lg){
+			&:after,
+			&:before {
+				width: 150px;
+			}
+			&:after {
+				left: 320px;
+			}
+			&:before {
+				right: 320px;
+			}
+		}
+		
+		li {
+			position: relative;
+			counter-increment: customlistcounter;
+			&:before {
+				 content: "#" counter(customlistcounter);
+		         margin-right: 10px;
+			}
+		}
+	}
+}
