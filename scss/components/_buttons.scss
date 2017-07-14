@@ -63,16 +63,22 @@
 
 ////////////// --- END OF NAV BTN --- //////////////
 
-.button--elegant {
+.button {
 	font-size: 1.2em;
 	color: #fff;
 	border:none;
 	border-radius: 3px;
-	background-color: darken($color-elegant-gray,10);
 	padding: 4px 20px;
 	text-decoration: none!important;
 	outline: none!important;
 	transition: background-color .4s;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.button--elegant {
+	background-color: darken($color-elegant-gray,10);
 	&:focus {
 		color: darken(#fff,4);
 	}
@@ -80,6 +86,13 @@
 	&:active {
 		background-color: $color-elegant-gray;
 		color: darken(#fff,4);
-		cursor: pointer;
+	}
+}
+
+.button--dark-blue {
+	background-color: $color-dark-blue;
+	&:hover,
+	&:active {
+		background-color: lighten($color-dark-blue,10);
 	}
 }
