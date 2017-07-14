@@ -66,6 +66,7 @@
 .button--elegant {
 	font-size: 1.2em;
 	color: #fff;
+	border:none;
 	border-radius: 3px;
 	background-color: darken($color-elegant-gray,10);
 	padding: 4px 20px;
@@ -79,5 +80,6 @@
 	&:active {
 		background-color: $color-elegant-gray;
 		color: darken(#fff,4);
+		cursor: pointer;
 	}
 }

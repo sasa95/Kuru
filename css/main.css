@@ -56,6 +56,12 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 .my-values ol li:before { content: "#" counter(customlistcounter); margin-right: 10px; }
 
+.contact-me { background-color: #2C3E50; }
+
+.contact-me .form-container { width: 90%; margin: auto; max-width: 500px; }
+
+.contact-me textarea { width: 100%; padding: 8px 12px; }
+
 #nav--main { min-height: 60px; text-align: center; background-color: rgba(255, 255, 255, 0.2); padding: 8px 0 0; }
 
 @media (min-width: 992px) { #nav--main { padding: 0 0 3px 0; } }
@@ -106,8 +112,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 #nav--main .navbar-toggler.collapsed .hamburger-menu:nth-child(3) { -webkit-transform: translateX(0) rotate(0); -ms-transform: translateX(0) rotate(0); transform: translateX(0) rotate(0); }
 
-.button--elegant { font-size: 1.2em; color: #fff; border-radius: 3px; background-color: #8c868b; padding: 4px 20px; text-decoration: none !important; outline: none !important; -webkit-transition: background-color .4s; -o-transition: background-color .4s; transition: background-color .4s; }
+.button--elegant { font-size: 1.2em; color: #fff; border: none; border-radius: 3px; background-color: #8c868b; padding: 4px 20px; text-decoration: none !important; outline: none !important; -webkit-transition: background-color .4s; -o-transition: background-color .4s; transition: background-color .4s; }
 
 .button--elegant:focus { color: whitesmoke; }
 
-.button--elegant:hover, .button--elegant:active { background-color: #a5a0a4; color: whitesmoke; }
+.button--elegant:hover, .button--elegant:active { background-color: #a5a0a4; color: whitesmoke; cursor: pointer; }

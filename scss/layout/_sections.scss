@@ -74,7 +74,6 @@
 				right: 320px;
 			}
 		}
-		
 		li {
 			position: relative;
 			counter-increment: customlistcounter;
@@ -85,3 +84,19 @@
 		}
 	}
 }
+
+// Contact
+
+.contact-me {
+	background-color: $color-dark-blue;
+	.form-container {
+	width: 90%;
+	margin: auto;
+	max-width: 500px;
+	}
+	textarea {
+		width: 100%;
+		padding: 8px 12px;
+	}
+}
+
