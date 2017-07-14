@@ -3,7 +3,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kuru</title>
-
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:700i|PT+Sans:400,700" rel="stylesheet">
@@ -14,7 +16,7 @@
   <body>
     <div id="wrapper">
       <header id="header" class="header--main">
-        <nav class="navbar navbar-toggleable-md navbar-light" id="nav--main">
+        <nav class="animated slideInDown navbar navbar-toggleable-md navbar-light" id="nav--main">
           <div class="container">
             <a class="navbar-brand float-left" href="#">LOGO</a>
             <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +40,9 @@
             </div>
           </div>
         </nav>
-          <p class="quote quote--header">Animated Spirits who tread darkness for a purpose.</p>
-          <a href="#" class="button button--elegant">Learn More</a>
-          <img class="header__arrows" src="img/header/arrows.png" alt="">
+          <p class="animated fadeIn quote quote--header">Animated Spirits who tread darkness for a purpose.</p>
+          <a href="#" class="animated fadeIn button button--elegant" style="animation-delay: .9s;">Learn More</a>
+          <img class="header__arrows animated fadeIn" src="img/header/arrows.png" alt="" style="animation-delay: 1.2s;">
       </header><!-- #header -->
 
       <div id="content"><!-- #content -->
@@ -156,8 +158,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   <script src="js/viewportchecker.js"></script>
    <script src="js/main.js"></script>
   </body>
 </html>
