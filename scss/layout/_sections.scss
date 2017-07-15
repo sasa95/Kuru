@@ -102,8 +102,22 @@
 }
 
 // Shop
-
 .section--shop {
 	background-color: $color-dark-blue;
 	color: #fff;
+}
+
+// Video
+
+.section--video {
+	background:$color-dark-blue;
+	color: #fff;
+	.single-video-container{
+		max-width: 700px;
+		margin:50px auto;
+	}
+	.video-title {
+		font-weight: normal;
+		margin: 20px 0;
+	}
 }
