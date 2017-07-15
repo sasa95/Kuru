@@ -1,5 +1,5 @@
 var $nav = $('#nav--main');
-var $header = $('.header--main');
+var $header = $('.header');
 var $headerHight = $header.height();
 var $navbarToggler = $('.navbar-toggler');
 var $hambg = $('.hamburger-menu');
@@ -55,7 +55,6 @@ $('a[href*="#"]')
   });
 
 // Animations
-
 function animateItems() {
     $('.what-i-do__item').css('opacity','0').viewportChecker({
     classToAdd: 'animated fadeIn',
@@ -87,12 +86,19 @@ function animateFooterQuote() {
   });
 }
 
+function animateShopItems() {
+    $('.shop-item-card').addClass('hidden').viewportChecker({
+    classToAdd: 'animated flipInY visible'
+  });
+}
+
 function animateAll(){
 	animateItems();
 	animateAbout();
-	animateMyValues()
-	animateSigniture()
-	animateFooterQuote()
+	animateMyValues();
+	animateSigniture();
+	animateFooterQuote();
+  animateShopItems();
 }
 
 animateAll();
